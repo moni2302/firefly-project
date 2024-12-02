@@ -8,6 +8,7 @@ import banner1 from '../../assets/banner1.jpeg';
 import banner2 from '../../assets/banner2.jpeg';
 import banner3 from '../../assets/banner3.jpeg';
 import { Button } from 'primereact/button';
+import './index.scss'
 
 
 

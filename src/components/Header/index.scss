@@ -4,14 +4,20 @@
     padding:10px;
 
     .header-content{
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-    }
-    .logo{
-        width: 150px;
-        height: 150px;
         text-align: center;
+        place-content: center;
+
     }
+    .logo-content{
+        place-content: center;
+    .logo{
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        border-radius: 20px;
+        vertical-align: middle;
+    }
+}
     .company_name{
         text-align: center;
         font-weight: bold;
@@ -19,7 +25,6 @@
     }
     .navlist{
         list-style: none;
-        padding: 10px;
         margin: 0;
         display: inline-flex;
         flex-wrap: wrap;
@@ -27,18 +32,27 @@
         li{
             cursor: pointer;
             box-shadow: none;
-            text-decoration: underline;
-            text-underline-offset: .3rem;
             background-color: transparent;
             font-size: 1.1rem;
-            padding: 10px;
+            padding: 25px;
+            font-weight: 500;
+        }
+        li:hover{
+            text-decoration: underline;
+            text-underline-offset: 1.3rem;
         }
     }
     .user-section{
-        text-align: center;
-        .user_profile{
-            width: 70px;
-            height: 80px;
+        place-content: center;
+        .contact-button{
+            background-color: #FDA13C;
+            font-size: 0.938rem;
+            font-weight: 400;
+            color: white;
+            border-radius: 7px 7px 7px 7px;
+            padding: 18px 30px 18px 30px;
+            box-shadow: none;
+            border-style: none;
         }
     }    
     

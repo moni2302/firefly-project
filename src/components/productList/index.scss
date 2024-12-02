@@ -1,0 +1,56 @@
+.product-lists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 50px; /* Space between items */
+    padding: 20px;
+    grid-auto-rows: 475px; /* Keeps a consistent height for each item */
+  }
+  
+  .spice-item {
+    width: 100%; /* Ensures the spice-item takes full width of its grid cell */
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    
+  }
+  
+  .image-content {
+    flex: 1;
+  }
+  
+  .spice-image {
+    width: 100%;
+    height: 370px;
+    object-fit: cover; /* Ensures image covers the container area */
+  }
+  
+  .text-content {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .spice-name a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .spice-name a:hover {
+    color: #ff6f61; /* Hover effect for spice name */
+  }
+  
+  .brand {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 0;
+  }
+  
+  .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-top: 5px;
+  }
+  

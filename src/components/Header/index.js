@@ -1,5 +1,5 @@
 import './index.scss';
-import Logo from '../../assets/logo.jpeg'
+import Logo from '../../assets/fireflyLogo.jpg'
 import UserProfile from '../../assets/userprofile.png'
 
 
@@ -7,36 +7,33 @@ const Header=()=>{
     return(
         <div>
         <header className="header">
-                <div>
+                <div className='logo-content'>
                     <img alt='logo' className='logo' src={Logo}/>
                 </div>
                 <div className='header-content'> 
-                    <div>
-                        <p className='company_name'>FIRE FLY</p>
-                    </div>
-                    <div>
+                    <nav>
                         <ul className='navlist'>
                             <li className=''>
-                            Whole Spices
+                           Home
                             </li>
                             <li>
-                            Honey & Jaggery
+                            About us
                             </li>
                             <li>
-                            Rituals
+                            Facilities
                             </li>
                             <li>
-                            Gift sets
+                            FAQ's
                             </li>
                             <li>
-                            Seasonal fruit
+                            Gallery
                             </li>
                             
                         </ul>
-                    </div>
+                    </nav>
                 </div>
                 <div className='user-section'>
-                <img alt='user_profile' className='user_profile' src={UserProfile}/>
+                <button className='contact-button'> Contact us</button>
                 </div>
         </header>
         </div>
