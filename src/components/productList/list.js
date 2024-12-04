@@ -10,18 +10,18 @@ const SpiceList = () => {
     const spiceList=[{
         image:cloves,
         productName:"Whole Cloves",
-        brand:"Spice Hill Farms",
+        brand:"FireFly",
         price:"From Rs.215.00"
     },
     {
         image:cardamon,
         productName:"Green Cardamon",
-        brand:"Spice Hill Farms",
+        brand:"FireFly",
         price:"From Rs.300.00"
     },{
         image:pepper,
         productName:"Pepper",
-        brand:"Spice Hill Farms",
+        brand:"FireFly",
         price:"From Rs.220.00"
     },]
   return (
