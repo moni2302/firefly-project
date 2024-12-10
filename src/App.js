@@ -1,20 +1,25 @@
 import logo from './logo.svg';
-import './App.css';
-import Header from './components/Header';
-import ImageCarousel from './components/banner/slideshow'
-import ProductList from './components/productList';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AboutUs from './components/AboutUs'
+import LoginPage from './components/Login';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Dashboard from './components/Dashboard';
 
 
 function App() {
   return (
-    <div className="App">
-     <Header/>
-     <ImageCarousel/>
-     <ProductList/>
-     <AboutUs/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/login" element={<LoginPage />} />
+      </Routes>
+    </Router>
+    // <div className="App">
+    //  <Header/>
+    //  <ImageCarousel/>
+    //  <ProductList/>
+    //  <AboutUs/>
+    //  <LoginPage/>
+    // </div>
   );
 }
 

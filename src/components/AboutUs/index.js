@@ -1,9 +1,10 @@
 import React from "react";
 import AboutBanner from "../../assets/About.jpeg"
+import './index.scss';
 
 const About=()=>{
     return(
-        <div>
+        <div className="App">
         <div>
             <h1 className="aboutusheading">About Us</h1>
         </div>
