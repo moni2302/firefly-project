@@ -44,6 +44,10 @@
     }
     .user-section{
         place-content: center;
+        display: flex;           /* Use Flexbox */
+        justify-content: center; /* Center the items horizontally */
+        align-items: center;     /* Center the items vertically (optional, depending on your layout) */
+        gap: 20px;               /* Add space between the images (you can adjust the value) */
         .contact-button{
             background-color: #FDA13C;
             font-size: 0.938rem;
@@ -53,6 +57,13 @@
             padding: 18px 30px 18px 30px;
             box-shadow: none;
             border-style: none;
+        }
+        .user-icon{
+            width: 25px;
+            cursor: pointer;
+        }
+        .shopping-icon{
+            width: 25px;
         }
     }    
     

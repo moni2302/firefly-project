@@ -62,3 +62,20 @@
   .text-align-left{
     text-align: left;
   }
+  .viewall-collection{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .view-all-button{
+    background-color: #00330a;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    border-radius: 30px;
+    padding: 15px 35px 15px 35px;
+    box-shadow: none;
+    border-style: none;
+    place-content: center;
+    
+  }

@@ -1,6 +1,7 @@
 import './index.scss';
 import Logo from '../../assets/fireflyLogo.jpg'
-import UserProfile from '../../assets/userprofile.png'
+import user from '../../assets/user.png'
+import shoppingbag from '../../assets/shopping-bag.png'
 import { useNavigate } from "react-router-dom";
 
 
@@ -8,7 +9,7 @@ const Header=()=>{
 
     const navigate = useNavigate();
 
-    const handleLoginClick = () => {
+    const userNavigate = () => {
       navigate("/login"); 
     };
 
@@ -41,7 +42,9 @@ const Header=()=>{
                     </nav>
                 </div>
                 <div className='user-section'>
-                <button onClick={handleLoginClick} className='contact-button'> Contact us</button>
+                    
+                <img src={user} alt="user" className='user-icon' onClick={userNavigate}/>
+                <img src={shoppingbag} alt="shoppingbag" className='shopping-icon'/>
                 </div>
         </header>
         </div>

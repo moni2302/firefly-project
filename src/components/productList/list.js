@@ -25,6 +25,7 @@ const SpiceList = () => {
         price:"From Rs.220.00"
     },]
   return (
+    <>
     <div className="product-lists">
         {spiceList.map(item=>
             <div className="spice-item">
@@ -41,6 +42,10 @@ const SpiceList = () => {
           </div>
         )}
     </div>
+     <div className="viewall-collection">
+     <button className="view-all-button"> View all</button>
+   </div>
+   </>
     
   );
 };
